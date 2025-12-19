@@ -99,9 +99,9 @@ if __name__ == '__main__':
 
     # Kernel messages lingo: Hibernation = to disk; Suspend = to RAM;
     # Sleep = either hibernation (S4) or suspend (S3)
-    suspendStartList = ['Entering sleep state \'suspend\'...', "Reached target Sleep.", "PM: suspend entry (deep)"]
+    suspendStartList = ['Entering sleep state \'suspend\'...', "Reached target Sleep.", "PM: suspend entry (deep)", "PM: suspend entry (s2idle)"]
     hibernateStartList = ["Suspending system...", "PM: hibernation: hibernation entry"]
-    suspendWakeList = ["ACPI: PM: Waking up from system sleep state S3", "ACPI: Waking up from system sleep state S3"]
+    suspendWakeList = ["ACPI: PM: Waking up from system sleep state S3", "ACPI: Waking up from system sleep state S3", "PM: suspend exit"]
     hibernateWakeList = ["ACPI: PM: Waking up from system sleep state S4", "ACPI: Waking up from system sleep state S4"]
     shuttingDownList = ["Shutting down."]
     # Starting Sleep (applies to both Suspend and Hibernation): Suspending system...
